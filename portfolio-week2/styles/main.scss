@@ -1,0 +1,44 @@
+// javascript commits work here
+// which should be helpful
+
+// variables :)
+// starts with a $
+// $variable-name: value;
+$base-font: 16px;
+$header-font-size: 3rem;// 300%;
+$sub-header-font-size: 1.5rem; //150%
+$em-header: 0.75rem; //75%
+$p-font: 1rem; //100%
+$sans-font: 'Arial', sans-serif;
+$fav-color-one: crimson;
+$fav-color-two: goldenrod;
+$rand: rgb(100,36,121);
+
+
+// build a basic style guide
+body {
+	font-size: $base-font;
+	color: $rand;
+}
+
+h1{
+	font-size: $header-font-size;
+	font-family: $sans-font;
+	color: $fav-color-one;
+}
+
+h2{
+	font-size: $sub-header-font-size;
+	font-family: $sans-font;
+	color: $fav-color-two;
+}
+
+p{
+	font-size: $p-font;
+	font-family: $sans-font;
+}
+
+h3{
+	font-size: $em-header;
+	font-family: $sans-font;
+}

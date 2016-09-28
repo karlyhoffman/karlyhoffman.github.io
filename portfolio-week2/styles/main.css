@@ -1,0 +1,23 @@
+body {
+  font-size: 16px;
+  color: #642479; }
+
+h1 {
+  font-size: 3rem;
+  font-family: "Arial", sans-serif;
+  color: crimson; }
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Arial", sans-serif;
+  color: goldenrod; }
+
+p {
+  font-size: 1rem;
+  font-family: "Arial", sans-serif; }
+
+h3 {
+  font-size: 0.75rem;
+  font-family: "Arial", sans-serif; }
+
+/*# sourceMappingURL=main.css.map */
