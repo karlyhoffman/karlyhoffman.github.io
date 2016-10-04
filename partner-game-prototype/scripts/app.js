@@ -1,3 +1,4 @@
+$(document).ready( function() {
 console.log("Linked.");
 
 var cities = [
@@ -126,4 +127,6 @@ $('#no').click( function(){
 	days.addDay(randomNum);
 	cost.addCost(randomNum);
 	// console.log(randomNum);
+});
+
 });
