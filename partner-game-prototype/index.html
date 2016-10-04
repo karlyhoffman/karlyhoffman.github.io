@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GA Trail</title>
+    <meta charset="">
+    <link rel="stylesheet" type="text/css" href="Styles/main.css">
+    <link rel="stylesheet" type="text/css" href="Styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="Styles/skeleton.css">
+</head>
+<body>
+	<div class='container'>
+		<header class='row' class='twelve columns'>
+			<img src ="images/GAT.png">
+			<div id="instructions">
+   				<h2>Welcome to the General Assembly Trail!</h2>
+   				<p><strong>YOUR GOAL:</strong> Get from California to Chicago as fast as you can, and as cheap as possible!</p>
+   				<p>The longer it takes you, the more you spend.</p>
+   				<p><strong>THE CATCH?</strong> If you're one of the lucky ones, seeing atttractions could get you there faster than those who choose not to see attractions!
+   				</p>
+   				<button id='start'>Start!</button>
+ 			</div>
+		</header>
+		<section class="row">
+			<div id="questions" class="twelve column">
+				<p>You're finally on your way to General Assembly in Chicago! But first, Vegas?</p>
+				<button id="yes">Ok!</button>
+				<button id="no">Nah. </button>
+			</div>
+		</section>
+		<section id="days" class="row">
+			<article class="twelve columns">
+				<h5 id="daysText">Days:</h5>
+				<p>0</p>
+			</article>
+		</section>
+		<section id="cost" class="row">
+			<article class="twelve columns">
+				<h5 id="costText">Cost:</h5>
+				<p>$0</p>
+			</article>
+		</section>
+		<section id="map" class="row">
+			<div id="maps" class="twelve columns">
+				<img src=images/Map1.png>
+			</div>
+		</section>
+		<section>
+		<div id="results">
+   				<h2>Congratulations! You made it!</h2>
+   				<p>The journey took you <span id="daysResult" style="color:#EF463F; font-weight: bold"> </span> days, and costed you <span id="costResult" style="color: #EF463F; font-weight: bold"> </span>!</p>
+   				<button id="restart">Play again!</button>
+ 			</div>
+ 		</section>
+
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="Scripts/app.js"></script>
+</body>
+</html>

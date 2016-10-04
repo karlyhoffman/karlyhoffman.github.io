@@ -1,0 +1,91 @@
+#instructions {
+	position: absolute;
+	margin: 20% auto;
+	width: 600px;
+	height: auto;
+	background: white;
+	text-align: center;
+	border-style: solid;
+	border-radius: 6px;
+	border-color: #EF463F;
+}
+
+img {
+	width: 100%;
+	height: auto;
+/*	margin: 0 auto;*/
+}
+
+p{
+	font-size:  2rem;
+	text-align: center;
+	background-color: white;
+}
+
+#daysText {
+	color:white;
+}
+
+#questions {
+padding-top: 30px;
+margin: 0 auto;
+
+}
+
+#days {
+	background-color:#EF463F;
+	border-radius: .5rem;
+	clear:both;
+    height:300px;
+    width:20%;
+    float:left;
+    height:125px;
+	margin-top: 20px;
+}
+
+#cost {
+	background-color:#EF463F;
+	border-radius: .5rem;
+	clear:both;
+    height:300px;
+    width:20%;
+    float:left;
+    height:125px;
+	margin-top: 20px;
+}
+
+#map {
+    width:77%;
+    float:right;
+    margin-top: 20px;
+}
+
+#days {
+	height:125px;
+	margin-top: 20px;
+ 	
+}
+
+#yes {
+	background-color: white;
+	color:#EF463F;
+	border-color: #EF463F;
+	border-style:solid;
+	border-radius: .5rem;
+	width:25%;
+    margin-left:24%;
+  	margin-right:auto;
+}
+
+#no {
+	background-color: white;
+	color:#EF463F;
+	border-color: #EF463F;
+	border-style:solid;
+	border-radius: .5rem;
+	width:25%;
+    margin-left:auto;
+    margin-right:24%;
+}
+
+
