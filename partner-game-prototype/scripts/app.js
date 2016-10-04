@@ -63,26 +63,10 @@ var maps = [
 	"images/Map8a-01.png",
 ];
 
+//Start Window:
 $('#questions').hide();
 $('#days ').hide();
 $('#cost').hide();
-
-//Work In-Progress JavaScript
-var buttonCount = -2;
-
-function displayQuestion() {
-	$('#questions').children('p').text(questionList[buttonCount]);
-};
-
-$('button').click( function(){
-	buttonCount += 1;
-	$('#questions').show();
-	$('#days ').show();
-	$('#cost').show();
-	displayQuestion();
-	displayMap();
-	displayResults();
-});
 
 $('#instructions').click(function() {
 	$('#instructions').hide();
@@ -91,25 +75,17 @@ $('#instructions').click(function() {
 $('#results').hide();
 
 
-///////// DAYS/COUNTER COUNTER /////////////
-$('#yes').click( function(){
-	var randomNum = Math.floor(Math.random() * 4) + 1;
-	days.addDay(randomNum);
-	cost.addCost(randomNum);
-	// console.log(randomNum);
-});
+//Functionality
+var buttonCount = -2;
 
-$('#no').click( function(){
-	var randomNum = Math.floor(Math.random() * 2) + 1;
-	days.addDay(randomNum);
-	cost.addCost(randomNum);
-	// console.log(randomNum);
-});
+function displayQuestion() {
+	$('#questions').children('p').text(questionList[buttonCount]);
+};
 
 function displayMap() {
-$("#maps").each(function(index){
-    $(this).find('img').attr("src", maps[buttonCount]);
-});
+	$("#maps").each(function(index){
+	    $(this).find('img').attr("src", maps[buttonCount]);
+	});
 };
 
 function displayResults() {
@@ -128,121 +104,26 @@ function displayResults() {
 	};
 };
 
+$('button').click( function(){
+	buttonCount += 1;
+	$('#questions').show();
+	$('#days ').show();
+	$('#cost').show();
+	displayQuestion();
+	displayMap();
+	displayResults();
+});
 
+$('#yes').click( function(){
+	var randomNum = Math.floor(Math.random() * 4) + 1;
+	days.addDay(randomNum);
+	cost.addCost(randomNum);
+	// console.log(randomNum);
+});
 
-
-
-//BUTTON COUNT ATTEMPT
-// var buttonCount = 0;
-
-// $('button').click( function(){
-// 	buttonCount += 1;
-// 	buttonCountCheck();
-// });
-
-// function buttonCountCheck() {
-// 	if ( buttonCount === 1 ) {
-// 		$('#questions').children('p').text(questionList[0]);
-// 		$('#yes').click( function(){
-// 				days.addDay(2);
-// 		});
-// 		$('#no').click( function(){
-// 				days.addDay(1);
-// 		});
-// 	} else if ( buttonCount === 2) {
-// 		$('#questions').children('p').text(questionList[1]);
-// 		$('#yes').click( function(){
-// 				days.addDay(2);
-// 		});
-// 		$('#no').click( function(){
-// 				days.addDay(1);
-// 		});
-// 	} else if ( buttonCount === 3) {
-// 		$('#questions').children('p').text(questionList[2]);
-// 		$('#yes').click( function(){
-// 				days.addDay(2);
-// 		});
-// 		$('#no').click( function(){
-// 				days.addDay(1);
-// 		});
-// 	}  else if ( buttonCount === 4) {
-// 		$('#questions').children('p').text(questionList[3]);
-// 		$('#yes').click( function(){
-// 				days.addDay(2);
-// 		});
-// 		$('#no').click( function(){
-// 				days.addDay(1);
-// 		});
-// 	} else if ( buttonCount === 5) {
-// 		$('#questions').children('p').text(questionList[4]);
-// 		$('#yes').click( function(){
-// 				days.addDay(2);
-// 		});
-// 		$('#no').click( function(){
-// 				days.addDay(1);
-// 		});
-// 	}  else if ( buttonCount === 6) {
-// 		$('#questions').children('p').text(questionList[5]);
-// 		$('#yes').click( function(){
-// 				days.addDay(2);
-// 		});
-// 		$('#no').click( function(){
-// 				days.addDay(1);
-// 		});
-// 	} else if ( buttonCount === 7) {
-// 		$('#questions').children('p').text(questionList[6]);
-// 		$('#yes').click( function(){
-// 				days.addDay(2);
-// 		});
-// 		$('#no').click( function(){
-// 				days.addDay(1);
-// 		});
-// 	}else {
-// 	};
-// };
-
-//LOOP ATTEMPT
-// var questions = {
-// 	askQuestion: function() {
-// 		for (var i = 0 ; i < questionList.length ; i++ ) ){
-//     		$('#questions').children('p').text(questionList[i]);
-//     		if ( $('#yes').click ) {
-// 			   days.addDay(2);
-// 			} else if ( $('#no').click ) {
-// 			   days.addDay(1);
-// 			} else {
-// 			}
-//   	});
-// 	}
-// }
-
-//ANOTHER LOOP ATTEMPT
-// var questions = {
-// 	askQuestion: function() {
-// 		$.each(questionList, function( i, value ){
-//     		$('#questions').children('p').text( value );
-//     		if ( $('#yes').click ) {
-// 			   days.addDay(2);
-// 			} else if ( $('#no').click ) {
-// 			   days.addDay(1);
-// 			} else {
-// 			   //run function2
-// 			}
-//   		});
-// 	}
-// }
-
-//EXTRA NOTES
-// no vegas = Math.floor(Math.random() * 2)
-// yes vegas  = Math.floor(Math.random() * 4)
-
-// var yes =function randomYesNumber() {
-// 	return Math.floor(Math.random() * 3) + 1;
-// };
-
-//  var no = function randomNoNumber() {
-// 	return Math.floor(Math.random() * 5) + 1;
-// };
-
-
-
+$('#no').click( function(){
+	var randomNum = Math.floor(Math.random() * 2) + 1;
+	days.addDay(randomNum);
+	cost.addCost(randomNum);
+	// console.log(randomNum);
+});
