@@ -5,7 +5,7 @@ var ctx = canvas.getContext("2d");
 
 var lives = 7; 
 var score = 0;
-var level = 1;
+// var level = 1;
 
 var horses = [];
 
@@ -33,6 +33,7 @@ var img7 = new Image();
 img7.src = "images/yellowHorse.png";
 
 
+// Image needs to load first, then .addHorse() from constructor
 function horseImageDraw(horse, image){
 	image.onload = horse.addHorse(image);
 }
@@ -41,10 +42,10 @@ function Horse() {
 	horses.push(this);
 	var base = this;
 
-	this.xCoor = (Math.floor(Math.random() * 400) + 200), //Random x coordinate = # from 200 to 600
-	this.yCoor = (Math.floor(Math.random() * 150) + 175), //Random y coordinate = # from 175 to 325
+	this.xCoor = (Math.floor(Math.random() * 400) + 200), // Random x coordinate = # from 200 to 600
+	this.yCoor = (Math.floor(Math.random() * 150) + 175), // Random y coordinate = # from 175 to 325
 
-	this.randomXDirection = (Math.random() * 2 - 1) * 1.5, 
+	this.randomXDirection = (Math.random() * 2 - 1) * 1.5, // Random # from -1.5 to 1.5
 	this.randomYDirection = (Math.random() * 2 - 1) * 1.5,
 
  	this.addHorse = function(image) {
@@ -57,14 +58,13 @@ function Horse() {
 	},
 
 	this.currentXCoorMax = function(){
-		return base.xCoor + 55;
+		return base.xCoor + 60;
 	},
 	this.currentYCoorMax = function(){
-		return base.yCoor + 50;
+		return base.yCoor + 60;
 	},
 	this.switchDirectionsListener = function() {
 		canvas.addEventListener('click', function(e){
-
 			var trueX = e.pageX - ctx.canvas.offsetLeft;
 			var trueY = e.pageY - ctx.canvas.offsetTop;
 			// console.log(trueX);
@@ -87,8 +87,8 @@ function Horse() {
 
 	this.checkBound = function(){
 		if (base.xCoor < canvas.width && base.yCoor < canvas.height
-			&& base.yCoor > -61 && base.xCoor > -55) { 
-			return true 
+			&& base.yCoor > -65 && base.xCoor > -65) { 
+			// return true 
 		}
 		// lose life if not within canvas borders:
 		else {
@@ -164,6 +164,3 @@ function animate(){
 
 };
 animate();
-
-
-
