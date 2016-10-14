@@ -9,27 +9,28 @@ var level = 1;
 
 var horses = [];
 
+var audio = new Audio('sounds/horseChristopher.mp3');
 
 var img = new Image();
-img.src = "images/evenSmallerHorse.png";
+img.src = "images/blueHorse.png";
 
 var img2 = new Image();
-img2.src = "images/evenSmallerHorse.png";
+img2.src = "images/greenHorse.png";
 
 var img3 = new Image();
-img3.src = "images/evenSmallerHorse.png";
+img3.src = "images/orangeHorse.png";
 
 var img4 = new Image();
-img4.src = "images/evenSmallerHorse.png";
+img4.src = "images/pinkHorse.png";
 
 var img5 = new Image();
-img5.src = "images/evenSmallerHorse.png";
+img5.src = "images/purpleHorse.png";
 
 var img6 = new Image();
-img6.src = "images/evenSmallerHorse.png";
+img6.src = "images/redHorse.png";
 
 var img7 = new Image();
-img7.src = "images/evenSmallerHorse.png";
+img7.src = "images/yellowHorse.png";
 
 
 function horseImageDraw(horse, image){
@@ -63,6 +64,7 @@ function Horse() {
 	},
 	this.switchDirectionsListener = function() {
 		canvas.addEventListener('click', function(e){
+
 			var trueX = e.pageX - ctx.canvas.offsetLeft;
 			var trueY = e.pageY - ctx.canvas.offsetTop;
 			// console.log(trueX);
@@ -75,6 +77,7 @@ function Horse() {
 				base.randomXDirection *= -1.25 ;
 				base.randomYDirection *= -1.25 ;
 
+				audio.play();
 				score +=10;
 				document.getElementById("scoreText").innerHTML = score;
 				// checkLevel();				
