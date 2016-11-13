@@ -1,0 +1,198 @@
+/*before parallax test*/
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before , *:after {
+	box-sizing: inherit;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	/* Figure out which font to use,
+	then delete script in html */
+	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Catamaran', sans-serif;*/
+	font-weight: 400;
+	position: absolute;
+}
+
+#vertical-line {
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	position: fixed;
+	background-color: #F5C72D;
+	width: 2px;
+	margin-left: 25%;
+	height: 100%;
+}
+
+#vertical-line2 {
+	z-index: 1;
+	position: absolute;
+	background-color: #F5C72D;
+	width: 2px;
+	margin-left: 25%;
+	height: 900px;
+}
+
+nav {
+	display: none;
+}
+
+#home {
+	margin-left: 14%;
+	color: #2E2C2A;
+	height: 68%;
+	text-shadow: 1px 1px 2px #BFB9AF;
+}
+
+h1 {
+	z-index: 2;
+	position: relative;
+	font-weight: 700;
+	font-size: 6rem;
+	margin-top: 15%; 
+}
+
+h2 {
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 300;
+	font-size: 2.65rem;
+	margin-top: 12%;
+	z-index: 2;
+	position: relative;
+	text-shadow: 1px 1px 1px #BFB9AF;
+
+}
+
+h3 {
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 100;
+	font-size: 1.85rem;
+	margin: -3% 0 10% .1%;
+	text-shadow: 1px 1px 1px #BFB9AF;
+}
+
+#work {
+	z-index: 2;
+	background-color: #3A3835;
+	height: 900px;
+}
+
+a {
+	text-decoration: none;
+	color: #F5C72D;
+}
+
+
+#projects {
+	font-size: 1.75rem;
+	font-weight: 300;
+	color: #86827B;
+	margin: 1% 0 2% 85%;
+	padding: 1%;
+	text-shadow: 1px 1px 3px #2E2C2A;
+}
+
+article {
+	z-index: 5;
+	position: relative;
+	width: 45%;
+	height: 350px;
+	float: left;
+	background-color: #86827B;
+	margin: 0 2.5% 4%;
+	box-shadow: 1px 1px 3px 2px #2E2C2A;
+	overflow: hidden;
+}
+
+img{
+ 	width: 100%;
+ 	position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  margin-right: 50%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, .85);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 25%;
+  font-weight: 100;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px #3A3835;
+  transition: all 1s ease;
+}
+
+article:hover .overlay {
+	display : none;
+}
+
+p {
+	font-size: 16px;
+	z-index: 10;
+	background-color: transparent;
+	margin-left: 1%;
+	padding-top: 3%;
+	text-align: center;
+}
+
+footer{
+	clear: both;
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+
+
+/*@media (max-width: 480px) {
+	#home {
+		display: block;
+		width: 100%;
+		height: 9rem;
+		float: none;
+	}
+	section {
+		display: block;
+		width: 100%;
+		height: 17rem;
+		margin-right: 0;
+		float: none; 
+	}
+	header, aside, section, footer {
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
+}
+
+@media (max-width: 960px) {
+	#home {
+		display: block;
+		width: 100%;
+		height: 9rem;
+		float: none;
+	}
+	section {
+		display: block;
+		width: 100%;
+		height: 17rem;
+		margin-right: 0;
+		float: none; 
+	}
+	header, aside, section, footer {
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
+}*/
