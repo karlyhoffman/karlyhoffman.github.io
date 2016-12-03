@@ -62,12 +62,15 @@ function Horse() {
 	var base = this;
 	// Starting horse coordinates
 	if ( canvasWidth === 800 ) {
+		// console.log("800 Starting coordinates happened!")
 		this.xCoor = (Math.floor(Math.random() * 400) + 200); // Random x coordinate = # from 200 to 600
 		this.yCoor = (Math.floor(Math.random() * 150) + 175); // Random y coordinate = # from 175 to 325
-	} else if ( canvasWidth < 800 ) {
+	} else if ( canvasWidth === 670 ) {
+		// console.log("This happened!")
 		this.xCoor = (Math.floor(Math.random() * 336) + 167); // Random x coordinate = # from 167 to 503
 		this.yCoor = (Math.floor(Math.random() * 184) + 126); // Random y coordinate = # from 175 to 325
 	} else if ( canvasWidth < 670 ) {
+		// console.log("No, This happened!")
 		this.xCoor = (Math.floor(Math.random() * 224) + 168); // Random x coordinate = # from 168 to 392
 		this.yCoor = (Math.floor(Math.random() * 146) + 109); // Random y coordinate = # from 109 to 255
 	};
@@ -85,12 +88,22 @@ function Horse() {
 	},
 	// Area of horse img depending on different canvas sizes
 	this.currentXCoorMax = function(){
-		return base.xCoor + 60;
-
+		if ( canvasWidth === 800 ) {
+			return base.xCoor + 60;
+		} else if ( canvasWidth === 670 ) {
+			return base.xCoor + 50;
+		} else if ( canvasWidth < 670 ) {
+			return base.xCoor + 42;
+		};
 	},
 	this.currentYCoorMax = function(){
-		return base.yCoor + 60;
-
+		if ( canvasWidth === 800 ) {
+			return base.yCoor + 60;
+		} else if ( canvasWidth === 670 ) {
+			return base.yCoor + 50;
+		} else if ( canvasWidth < 670 ) {
+			return base.yCoor + 42;
+		};
 	},
 	this.switchDirectionsListener = function() {
 		canvas.addEventListener('click', function(e){
