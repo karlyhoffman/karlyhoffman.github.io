@@ -32,25 +32,45 @@ img6.src = "images/redHorse.png";
 var img7 = new Image();
 img7.src = "images/yellowHorse.png";
 
-
 // Image needs to load first, then .addHorse() from constructor
 function horseImageDraw(horse, image){
 	image.onload = horse.addHorse(image);
 }
 
 var canvasWidth = canvas.width;
+var canvasHeight = canvas.height;
+
+function setCanvasSize() {
+	console.log("This is the window width: " + window.innerWidth);
+	if ( window.innerWidth > 800 ) {
+		console.log("No need to change canvas size.")
+	} else if ( window.innerWidth > 670 ){
+		canvasWidth = 670;
+		canvasHeight = 436;
+		console.log("This is the new canvas width: " + canvasWidth);
+	} else if ( window.innerWidth < 670 ) {
+		canvasWidth = 560;
+		canvasHeight = 364;
+		console.log("This is the new canvas width: " + canvasWidth);
+	}
+}
+setCanvasSize();
+
 
 function Horse() {
 	horses.push(this);
 	var base = this;
-
+	// Starting horse coordinates
 	if ( canvasWidth === 800 ) {
 		this.xCoor = (Math.floor(Math.random() * 400) + 200); // Random x coordinate = # from 200 to 600
 		this.yCoor = (Math.floor(Math.random() * 150) + 175); // Random y coordinate = # from 175 to 325
-	} else if ( 670 < canvasWidth < 800 ) {
-		console.log("Smaller canvas size.");
-	}
-
+	} else if ( canvasWidth < 800 ) {
+		this.xCoor = (Math.floor(Math.random() * 336) + 167); // Random x coordinate = # from 167 to 503
+		this.yCoor = (Math.floor(Math.random() * 184) + 126); // Random y coordinate = # from 175 to 325
+	} else if ( canvasWidth < 670 ) {
+		this.xCoor = (Math.floor(Math.random() * 224) + 168); // Random x coordinate = # from 168 to 392
+		this.yCoor = (Math.floor(Math.random() * 146) + 109); // Random y coordinate = # from 109 to 255
+	};
 
 	this.randomXDirection = (Math.random() * 2 - 1) * 1.5, // Random # from -1.5 to 1.5
 	this.randomYDirection = (Math.random() * 2 - 1) * 1.5,
@@ -63,12 +83,14 @@ function Horse() {
 		base.xCoor += base.randomXDirection;
 		base.yCoor += base.randomYDirection;
 	},
-
+	// Area of horse img depending on different canvas sizes
 	this.currentXCoorMax = function(){
 		return base.xCoor + 60;
+
 	},
 	this.currentYCoorMax = function(){
 		return base.yCoor + 60;
+
 	},
 	this.switchDirectionsListener = function() {
 		canvas.addEventListener('click', function(e){
@@ -81,8 +103,8 @@ function Horse() {
 				&& trueY >= base.yCoor
 				&& trueY <= base.currentYCoorMax()
 			   ) {
-				base.randomXDirection *= -1.25 ;
-				base.randomYDirection *= -1.25 ;
+				base.randomXDirection *= -1.125 ;
+				base.randomYDirection *= -1.125 ;
 
 				// audio.play();
 				score +=10;
