@@ -126,7 +126,6 @@ function Horse() {
 			};
 		});
 	},
-
 	this.checkBound = function(){
 		if (base.xCoor < canvas.width && base.yCoor < canvas.height
 			&& base.yCoor > -65 && base.xCoor > -65) { 
@@ -155,7 +154,6 @@ var horseFive = new Horse();
 var horseSix = new Horse();
 var horseSeven = new Horse();
 
-
 horseOne.switchDirectionsListener();
 horseTwo.switchDirectionsListener();
 horseThree.switchDirectionsListener();
@@ -163,7 +161,6 @@ horseFour.switchDirectionsListener();
 horseFive.switchDirectionsListener();
 horseSix.switchDirectionsListener();
 horseSeven.switchDirectionsListener();
-
 
 function animate(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -182,7 +179,6 @@ function animate(){
 	horseSix.horsePath();
 	horseSeven.horsePath();
 
-
 	horseOne.checkBound();
 	horseTwo.checkBound();
 	horseThree.checkBound();
@@ -190,8 +186,6 @@ function animate(){
 	horseFive.checkBound();
 	horseSix.checkBound();
 	horseSeven.checkBound();
-
-	// console.log(horses);
 
 	// Change to number of lives, once levelUp() is working
 	if (horses.length > 0) {
@@ -203,6 +197,5 @@ function animate(){
 		h3.classList.add('blink');
 		document.body.appendChild(h3);
 	};
-
 };
 animate();
