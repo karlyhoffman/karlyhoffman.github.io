@@ -1,11 +1,17 @@
+// sass --watch  styles/main.scss:styles/main.css
 @charset "UTF-8";
+
+$font-stack: "Helvetica", "Arial", sans-serif;
+$font-thin: lighter;
+$right-align: right;
+
 #background-color {
   background-color: #FFE061;
   margin: 1.75%; }
 
 h4 {
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-weight: lighter;
+  font-family: $font-stack;
+  font-weight: $font-thin;
   font-size: 2rem; }
 
 h1 {
@@ -15,44 +21,48 @@ h1 {
 
 p {
   margin-top: 5%;
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-weight: lighter;
+  font-family: $font-stack;
+  font-weight: $font-thin;
   font-size: 2.5rem; }
 
 h3 {
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-weight: lighter;
-  text-align: center; }
+  font-family: $font-stack;
+  font-weight: $font-thin;
+  text-align: center}
 
 h2 {
   font-family: "Times New Roman", Times, serif;
   font-weight: bolder;
-  text-align: center;
-  font-size: 8rem; }
+  text-align: center; 
+  font-size: 8rem;}
 
 label {
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-weight: lighter;
+  font-family: $font-stack;
+  font-weight: $font-thin;
   font-size: 2rem;
   margin: 1%; }
 
 .container {
   padding-bottom: 10%; }
 
-#bar {
-  padding-bottom: 2%; }
+#bar{
+  padding-bottom: 2%;
+}
 
-#projects {
-  padding-bottom: 20%; }
+#projects{
+  padding-bottom: 20%;
+}
 
-#gallery {
-  position: relative; }
+#gallery{
+  position: relative;
+}
 
 img {
   width: 100%;
   border: 10px solid white;
   top: 0;
-  left: 0; }
+  left: 0;
+}
 
 .fix-nav {
   top: 0;
@@ -60,19 +70,65 @@ img {
   width: 96.5%;
   position: fixed;
   background-color: #FFE061;
-  margin-left: 1.75%; }
+  margin-left: 1.75% }
+
+// .right {
+//   text-align: $right-align
+// }
 
 #bottom-bar {
-  margin-top: 10%; }
+  margin-top: 10%;
+}
+
 
 /* Horizontal Scroll
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+// .horizontal-scroll-wrapper{
+//   position: absolute;
+//   display: block;
+//   // top: 0;
+//   left:0;
+//   width:80px;
+//   max-height:500px;
+//   margin:0;
+//   background:#abc;
+//   overflow-y: auto;
+//   overflow-x:hidden;
+//   transform:rotate(-90deg) translateY(-80px);
+//   transform-origin:right top;
+// }
+// .horizontal-scroll-wrapper > div{
+//   display:block;
+//   padding:5px;
+//   background:#cab;
+//   transform:rotate(90deg);
+//   transform-origin: right top;
+// }
+
+// .rectangles{
+//   top:100px;
+//   padding:100px 0 0 0;
+// }
+// .rectangles > div{
+//   width:140px;
+//   height:60px;
+//   margin:50px 10px;
+//   padding:5px;
+//   background:#cab;
+//   transform:rotate(90deg) translateY(80px);
+//   transform-origin: right top;
+// }
+
+
+
+
+
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (min-width: 0px) {
   .seven.columns {
     width: 70%; }
-
   h4 {
     font-size: 1.15rem; }
 
@@ -96,7 +152,6 @@ img {
 @media (min-width: 750px) {
   .seven.columns {
     width: 56.6666666667%; }
-
   h4 {
     font-size: 1.8rem; }
 
@@ -125,5 +180,3 @@ img {
 
   p {
     font-size: 6rem; } }
-
-/*# sourceMappingURL=main.css.map */
