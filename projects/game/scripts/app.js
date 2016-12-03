@@ -9,7 +9,7 @@ var score = 0;
 
 var horses = [];
 
-var audio = new Audio('sounds/horseChristopher.mp3');
+// var audio = new Audio('sounds/horseChristopher.mp3');
 
 var img = new Image();
 img.src = "images/blueHorse.png";
@@ -38,12 +38,19 @@ function horseImageDraw(horse, image){
 	image.onload = horse.addHorse(image);
 }
 
+var canvasWidth = canvas.width;
+
 function Horse() {
 	horses.push(this);
 	var base = this;
 
-	this.xCoor = (Math.floor(Math.random() * 400) + 200), // Random x coordinate = # from 200 to 600
-	this.yCoor = (Math.floor(Math.random() * 150) + 175), // Random y coordinate = # from 175 to 325
+	if ( canvasWidth === 800 ) {
+		this.xCoor = (Math.floor(Math.random() * 400) + 200); // Random x coordinate = # from 200 to 600
+		this.yCoor = (Math.floor(Math.random() * 150) + 175); // Random y coordinate = # from 175 to 325
+	} else if ( 670 < canvasWidth < 800 ) {
+		console.log("Smaller canvas size.");
+	}
+
 
 	this.randomXDirection = (Math.random() * 2 - 1) * 1.5, // Random # from -1.5 to 1.5
 	this.randomYDirection = (Math.random() * 2 - 1) * 1.5,
@@ -77,7 +84,7 @@ function Horse() {
 				base.randomXDirection *= -1.25 ;
 				base.randomYDirection *= -1.25 ;
 
-				audio.play();
+				// audio.play();
 				score +=10;
 				document.getElementById("scoreText").innerHTML = score;
 				// checkLevel();				
