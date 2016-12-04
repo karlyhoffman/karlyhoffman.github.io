@@ -57,20 +57,25 @@ function setCanvasSize() {
 }
 setCanvasSize();
 
+
 function Horse() {
 	horses.push(this);
 	var base = this;
 	// Starting horse coordinates
 	if ( canvasWidth === 1600 ) {
+		// console.log("800 Starting coordinates happened!")
 		this.xCoor = (Math.floor(Math.random() * 400) + 200); // Random x coordinate = # from 200 to 600
 		this.yCoor = (Math.floor(Math.random() * 150) + 175); // Random y coordinate = # from 175 to 325
 	} else if ( canvasWidth === 800 ) {
+		// console.log("800 Starting coordinates happened!")
 		this.xCoor = (Math.floor(Math.random() * 400) + 200); // Random x coordinate = # from 200 to 600
 		this.yCoor = (Math.floor(Math.random() * 150) + 175); // Random y coordinate = # from 175 to 325
 	} else if ( canvasWidth === 670 ) {
+		// console.log("This happened!")
 		this.xCoor = (Math.floor(Math.random() * 336) + 167); // Random x coordinate = # from 167 to 503
 		this.yCoor = (Math.floor(Math.random() * 184) + 126); // Random y coordinate = # from 175 to 325
 	} else if ( canvasWidth < 670 ) {
+		// console.log("No, This happened!")
 		this.xCoor = (Math.floor(Math.random() * 224) + 168); // Random x coordinate = # from 168 to 392
 		this.yCoor = (Math.floor(Math.random() * 146) + 109); // Random y coordinate = # from 109 to 255
 	};
@@ -195,10 +200,21 @@ function animate(){
 	if (horses.length > 0) {
 		window.requestAnimationFrame(animate)
 	} else {
+		// document.getElementById("livesText").innerHTML = "GAME OVER."
 		var h3 = document.createElement('h3');
 		h3.innerHTML = 'GAME OVER';
 		h3.classList.add('blink');
 		document.body.appendChild(h3);
 	};
 };
-animate();
+
+
+var button = document.getElementById('start');
+var instucts = document.getElementById('instructions');;
+
+button.addEventListener('click', function(event) {
+	button.classList.add('hide');
+	instucts.classList.add('hide');
+	animate();
+});
+

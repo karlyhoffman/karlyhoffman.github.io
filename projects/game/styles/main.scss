@@ -10,11 +10,6 @@ html, body {
 	background-repeat: repeat;
 }
 
-#instructions {
-	display: block;
-	margin: 4% auto;
-}
-
 h1 {
 	display: block;
 	margin: 1% auto;
@@ -41,14 +36,47 @@ h3 {
     margin-top: 15%;
 }
 
+h4 {
+	font-size: 3rem;
+	letter-spacing: 2.25px;
+	width: 58%;
+	text-align: center;
+	z-index: 2001;
+	display: block;
+	position: absolute;
+	margin-top: 10%;
+	left: 52%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-52%)
+}
+
+button {
+	padding: 1.5%;
+	font-size: 3rem;
+	text-align: center;
+	background-color: white;
+	border: 2.5px dashed goldenrod;
+	box-shadow: 0 0 0 3px white, 0.5px 0.5px 10px black;
+	display: block;
+	margin: 29% auto 0 auto;
+	z-index: 10000;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%)
+}
+
+.hide{
+	display: none; 
+}
+
 #canvas {
 	position: absolute;
 	clear: both;
 	background-color: white;
 	display: block;
 	margin: auto;
-	border: 2px solid goldenrod;
-	/*border-radius: 50%;*/
+	border: 5px ridge goldenrod;
 	right: 0px;
     left: 0px;
 }
@@ -90,6 +118,9 @@ h3 {
 
 
 
+
+/* Media
+----------------------------------------*/
 @media (min-width: 1600px){
 	#canvas {
 	    width: 1600px; 
@@ -131,8 +162,6 @@ h3 {
 	#canvas {
 		width: 670px; 
 		height: 436px;
-		border: 1px solid blue;
-		/*border-radius: 50%;*/
 	}
 }
 
@@ -165,9 +194,7 @@ h3 {
 		width: 560px; 
 		height: 364px;
 		margin: 0.75%;
-		margin-left: 15%;
-		border: 1px solid goldenrod;
-		/*border-radius: 50%;*/ }
+		margin-left: 15%; }
 
 	h3 {
 		position: absolute;
