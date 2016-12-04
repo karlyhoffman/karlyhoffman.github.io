@@ -50,9 +50,11 @@ label {
 
 img {
   width: 100%;
-  border: 10px solid white;
   top: 0;
   left: 0; }
+
+section {
+  height: 100%; }
 
 .fix-nav {
   top: 0;

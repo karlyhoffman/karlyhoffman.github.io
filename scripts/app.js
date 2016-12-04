@@ -24,7 +24,7 @@ $(function() {
 	});
 
 	function scrollNav() {
-		$('#bar, #projects').click(function(){  
+		$('#bar').click(function(){  
 	    //Animate
 		    $('html, body').animate({
 			    scrollTop: $("#projects").offset().top

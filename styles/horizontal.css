@@ -33,7 +33,7 @@ nav label:hover {
     width: 100%;
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 120%;
     z-index: 1010;
     padding:  8em 1em 0;
     background-position: 50% 50%;
