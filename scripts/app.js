@@ -8,10 +8,10 @@ $(function() {
 	    var height = $(window).scrollTop();
 	    var nav = $('nav');
 	    if( height >= navHeight) {
-			console.log("Hit the nav!");
+			// console.log("Hit the nav!");
 			nav.addClass('fix-nav')
 	    } else {
-	    	console.log("Haven't hit the nav, yet.");
+	    	// console.log("Haven't hit the nav, yet.");
 	    	nav.removeClass('fix-nav')
 	    }
 	});

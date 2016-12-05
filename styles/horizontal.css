@@ -1,5 +1,5 @@
 .wrap {
-	height: 800px;
+	height: 900px;
 	// width: 100%;
 	position: relative;
 	overflow: hidden;
@@ -37,7 +37,7 @@ nav label:hover {
     top: 0;
     left: 120%;
     z-index: 1010;
-    padding:  8em 1em 0;
+    padding: 8em 1em 0;
     background-position: 50% 50%;
     background-size: cover;
     transition: left 0s .75s;  
