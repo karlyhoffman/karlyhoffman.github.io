@@ -30,10 +30,14 @@ h2 {
   text-align: center;
   font-size: 8rem; }
 
+nav {
+  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black; }
+
 label {
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: lighter;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 1%; }
 
 .container {
@@ -59,10 +63,11 @@ section {
 .fix-nav {
   top: 0;
   left: 0;
-  width: 96.5%;
+  right: 0;
+  width: 80%;
   position: fixed;
   background-color: #FFE061;
-  margin-left: 1.75%; }
+  opacity: 0.85; }
 
 #bottom-bar {
   margin-top: 10%; }

@@ -1,20 +1,13 @@
 $(function() {
 	console.log("Linked.");
 
-	var paddingHeight = $(window).height() * .035 ;
-	console.log(paddingHeight);
-	var landingHeight = paddingHeight + $("#landing").height() + $("#bar").height() + $("h2").height() + $("nav").height() + $("label").height(); 
-
-
-	console.log(landingHeight);
-
-	var paddingHeight = $(window).height();
+	var offset = $("nav").offset();
+	var navHeight = offset.top;
 
 	$(window).scroll(function() {
 	    var height = $(window).scrollTop();
 	    var nav = $('nav');
-
-	    if( height >= landingHeight) {
+	    if( height >= navHeight) {
 			console.log("Hit the nav!");
 			nav.addClass('fix-nav')
 	    } else {
