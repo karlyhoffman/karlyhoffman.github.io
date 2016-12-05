@@ -3,7 +3,7 @@
 	// width: 100%;
 	position: relative;
 	overflow: hidden;
-	color: black;
+	color: #222;
 	text-align: center;
 }
 
@@ -18,7 +18,7 @@ nav {
 
 nav label {
 	font-weight: lighter;
-	color: black;
+	color: #222;
 	cursor: pointer;
 	display: inline-block;
 	line-height: 4.25rem;

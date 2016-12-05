@@ -32,8 +32,8 @@ h2 {
   padding-bottom: 1.5%; }
 
 nav {
-  border-top: 0.5px solid black;
-  border-bottom: 0.5px solid black; }
+  border-top: 0.5px solid #222;
+  border-bottom: 0.5px solid #222; }
 
 label {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -88,11 +88,16 @@ section {
 
 #bottom-bar {
   margin-top: 5%;
-  padding-bottom: 5%; }
+  padding-bottom: 2.5%; }
 
 #contact {
   text-align: center;
   padding-bottom: 5%; }
+
+.logo {
+  border: none;
+  width: 20%;
+  margin: 5%; }
 
 footer {
   text-align: center;
