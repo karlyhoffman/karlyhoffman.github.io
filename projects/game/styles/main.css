@@ -68,7 +68,7 @@ button {
   clear: both;
   background-color: white;
   display: block;
-  margin: auto;
+  margin: 0 auto 10% auto;
   border: 5px ridge goldenrod;
   right: 0px;
   left: 0px; }
