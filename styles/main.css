@@ -30,7 +30,7 @@ h2 {
   text-align: center;
   font-size: 8rem;
   padding-bottom: 1.5%;
-  margin-top: 2%; }
+  margin-top: 4%; }
 
 nav {
   border-top: 0.5px solid #222;
@@ -54,7 +54,8 @@ p {
   padding-bottom: 2%; }
 
 #projects {
-  padding-bottom: 20%; }
+  padding-bottom: 20%;
+  margin-bottom: 5%; }
 
 #gallery {
   position: relative; }
@@ -66,7 +67,7 @@ p {
   margin-bottom: 0; }
 
 .objective {
-  margin-top: -1%; }
+  margin-top: 0.5%; }
 
 a {
   text-decoration: none; }
@@ -116,22 +117,24 @@ section {
   box-sizing: border-box; }
 
 #bottom-bar {
-  padding-bottom: 2.5%; }
+  padding-bottom: 1.5%; }
 
 #contact {
   text-align: center;
-  padding-bottom: 4%; }
+  padding-bottom: 2.5%; }
 
 #contact-info {
   margin: 0 auto -5% auto; }
 
 .logo {
   border: none;
-  width: 20%;
-  margin-top: 10%;
+  width: 10%;
+  height: 10%;
+  margin-top: 5%;
   padding: 0 4%; }
 
 footer {
+  margin-bottom: -5%;
   text-align: center;
   font-size: 1.25rem;
   padding-bottom: 2%; }
