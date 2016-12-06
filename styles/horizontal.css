@@ -58,7 +58,7 @@ input { visibility:hidden; }
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 550px) {
 	.wrap {
-		height: 850px;}
+		height: 930px;}
 	}
 }
 /* Larger than tablet */
