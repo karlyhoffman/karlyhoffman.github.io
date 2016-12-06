@@ -1,5 +1,5 @@
 .wrap {
-	height: 1250px;
+	height: 1270px;
 	// width: 100%;
 	position: relative;
 	overflow: hidden;
@@ -70,14 +70,17 @@ input { visibility:hidden; }
 		height: 950px;}
 	}
 }
-/* Larger than desktop */
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
 	.wrap {
 		height: 1050px;}
+	}
 }
-/* Larger than Desktop HD */
-@media (min-width: 1300px) {
- 	.wrap {
-		height: 1150px;}
+@media (max-width: 1400px) {
+	.wrap {
+		height: 1200px;}
+}
+@media (min-width: 1600px) {
+	.wrap {
+		height: 1250px;}
 }
 
