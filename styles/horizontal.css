@@ -1,5 +1,5 @@
 .wrap {
-	height: 900px;
+	height: 1300px;
 	// width: 100%;
 	position: relative;
 	overflow: hidden;
@@ -55,4 +55,29 @@ nav label:hover {
 }
 
 input { visibility:hidden; }
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 550px) {
+	.wrap {
+		height: 850px;}
+	}
+}
+/* Larger than tablet */
+@media (max-width: 780px) {
+	.wrap {
+		height: 950px;}
+	}
+}
+/* Larger than desktop */
+@media (max-width: 1300px) {
+	.wrap {
+		height: 1050px;}
+}
+/* Larger than Desktop HD */
+@media (min-width: 1300px) {
+ 	.wrap {
+		height: 1150px;}
+}
 

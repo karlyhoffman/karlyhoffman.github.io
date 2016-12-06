@@ -29,7 +29,8 @@ h2 {
   font-weight: bolder;
   text-align: center;
   font-size: 8rem;
-  padding-bottom: 1.5%; }
+  padding-bottom: 1.5%;
+  margin-top: 2%; }
 
 nav {
   border-top: 0.5px solid #222;
@@ -44,7 +45,7 @@ label {
 p {
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: lighter;
-  font-size: 1.8rem; }
+  font-size: 1.65rem; }
 
 .container {
   padding-bottom: 10%; }
@@ -58,6 +59,15 @@ p {
 #gallery {
   position: relative; }
 
+.summary {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 0; }
+
+.objective {
+  margin-top: -1%; }
+
 a {
   text-decoration: none; }
 
@@ -66,10 +76,9 @@ a:hover {
   text-shadow: 0px 0px 2px #272727; }
 
 img {
-  width: 95%;
+  width: 100%;
   border: 2px solid white;
-  margin-top: -4%;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
   top: 0;
   left: 0;
   right: 0; }
@@ -86,18 +95,41 @@ section {
   background-color: #FFE061;
   opacity: 0.85; }
 
+.technology {
+  display: inline-block;
+  height: 38px;
+  padding: 0 25px;
+  margin: 0.5%;
+  color: black;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bolder;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  font-family: "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  box-sizing: border-box; }
+
 #bottom-bar {
-  margin-top: 5%;
   padding-bottom: 2.5%; }
 
 #contact {
   text-align: center;
-  padding-bottom: 5%; }
+  padding-bottom: 4%; }
+
+#contact-info {
+  margin: 0 auto -5% auto; }
 
 .logo {
   border: none;
   width: 20%;
-  margin: 5%; }
+  margin-top: 10%;
+  padding: 0 4%; }
 
 footer {
   text-align: center;
