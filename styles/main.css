@@ -128,8 +128,9 @@ section {
 
 .logo {
   border: none;
-  width: 60px;
-  height: 60px;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
   margin-top: 5%;
   padding: 0 4%; }
 
