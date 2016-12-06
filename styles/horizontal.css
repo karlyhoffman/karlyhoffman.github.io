@@ -1,9 +1,7 @@
 .wrap {
 	height: 1270px;
-	// width: 100%;
 	position: relative;
 	overflow: hidden;
-	color: #222;
 	text-align: center;
 }
 
@@ -11,14 +9,12 @@ nav {
 	position: absolute;
 	margin: 0 auto 10% auto;
 	z-index: 9000;
-	// width: 100%;
 	left: 0;
 	right: 0;
 }
 
 nav label {
 	font-weight: lighter;
-	color: #222;
 	cursor: pointer;
 	display: inline-block;
 	line-height: 4.25rem;
@@ -39,15 +35,16 @@ nav label:hover {
     z-index: 1010;
     padding: 8em 1em 0;
     background-position: 50% 50%;
-    background-size: cover;
-    transition: left 0s .75s;  
+	background-color: #FFE061;
+    // transition: top 0s .75s;  
 }
 
 
 [id^="slide"]:checked + .slide {
     left: 0;
     z-index: 2100;
-    transition: left .65s ease-out;
+    // transition: left .65s ease-out;
+    transition: transform 1s;
 }
 
 [id^="slide"]:checked + label {
