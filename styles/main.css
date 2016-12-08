@@ -168,6 +168,9 @@ footer {
     height: 40px;
     padding: 0 2%; }
 
+  iframe {
+    height: 200px; }
+
   footer {
     padding-bottom: 7%; } }
 /* Larger than phablet (also point when grid becomes active) */
