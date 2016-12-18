@@ -126,7 +126,7 @@ section {
 .logo {
   border: none;
   display: inline-block;
-  width: 54px;
+  width: 53px;
   height: 53px;
   margin-top: 5%;
   padding: 0 4%; }
@@ -136,6 +136,11 @@ footer {
   text-align: center;
   font-size: 1.25rem;
   padding-bottom: 2%; }
+
+.grow:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3); }
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
