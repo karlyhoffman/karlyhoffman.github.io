@@ -54,7 +54,6 @@ p {
   padding-bottom: 2%; }
 
 #projects {
-  padding-bottom: 20%;
   margin-bottom: 5%; }
 
 #gallery {
@@ -65,6 +64,13 @@ p {
   font-weight: bolder;
   font-size: 2rem;
   margin-bottom: 0; }
+
+#gallery2 div {
+  margin-top: 2%;
+  margin-bottom: 2%; }
+#gallery2 p {
+  text-align: justify;
+  margin-top: 0; }
 
 a {
   text-decoration: none; }
@@ -95,14 +101,14 @@ section {
 
 .technology {
   display: inline-block;
-  height: 38px;
-  padding: 0 25px;
-  margin: 0.5%;
+  height: 32px;
+  padding: 0 15px;
+  margin: 0.3%;
   color: black;
   text-align: center;
   font-size: 11px;
   font-weight: bolder;
-  line-height: 38px;
+  line-height: 32px;
   letter-spacing: .1rem;
   font-family: "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
