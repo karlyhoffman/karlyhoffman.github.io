@@ -35,7 +35,8 @@ h2 {
 h5 {
   font-family: "Times New Roman", Times, serif;
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: 3.35rem;
+  margin-top: 2%;
   margin-bottom: -7%; }
 
 nav {
@@ -45,7 +46,7 @@ nav {
 label {
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: lighter;
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   margin: 1%; }
 
 p {

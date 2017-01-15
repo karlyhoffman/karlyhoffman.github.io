@@ -22,12 +22,12 @@ $(function() {
 			    scrollTop: $("#projects").offset().top
 			}, 1000);
 		});
-		$('label').click(function(){  
-	    //Animate
-		    $('html, body').animate({
-			    scrollTop: $("#gallery").offset().top
-			}, 1000);
-		});
+		// $('label').click(function(){  
+	 //    //Animate
+		//     $('html, body').animate({
+		// 	    scrollTop: $("#gallery").offset().top
+		// 	}, 1000);
+		// });
 	};
 	scrollNav();
 });
