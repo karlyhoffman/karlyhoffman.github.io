@@ -1,0 +1,30 @@
+nav {
+
+  a {
+    color: $white;
+    &:hover {
+      color: $carbon-black;
+    }
+
+    &.dk {
+      color: $carbon-black;
+      &:hover {
+        color: $red-purple;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    color: $white;
+  }
+
+  .navbar-brand {
+    @media only screen and (min-width: 768px){
+      color: $carbon-black;
+    }
+
+    &.white-copy {
+      color: $white;
+    }
+  }
+}

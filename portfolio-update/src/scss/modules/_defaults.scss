@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  color: black;
+  // background: radial-gradient(ellipse at center, $base 0, $darken 70%, $back 100%);
+  transition: all .4s .3s ease-in;
+}
+body,html{
+	min-height: 100vh;
+}
+.navbar {
+  margin-bottom: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}

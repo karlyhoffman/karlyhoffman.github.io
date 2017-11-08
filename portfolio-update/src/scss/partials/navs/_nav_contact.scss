@@ -1,0 +1,15 @@
+nav.contact {
+
+  a {
+    color: $carbon-black;
+
+    &:hover {
+      color: $red-purple;
+    }
+  }
+
+  .navbar-toggler {
+    color: $carbon-black;
+  }
+
+}

@@ -1,0 +1,22 @@
+.contact {
+
+  .hero-cont {
+    margin: 150px 25px;
+
+    .contact-copy {
+      font-weight: 400;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    .hero-cont {
+      margin: 10vw 0;
+
+      .copy-cont {
+        padding-top: 2vw;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,19 @@
+nav.projects {
+
+  a {
+    color: $white;
+    &:hover {
+      color: $carbon-black;
+    }
+  }
+
+  .nav-link {
+    @media only screen and (min-width: 768px){
+      color: $carbon-black;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
