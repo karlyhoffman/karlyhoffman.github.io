@@ -11,7 +11,16 @@
     padding-bottom: 25px;
   }
   .next-btn {
-    padding-top: 8vw;
+    padding-top: 4vw;
+    padding-right: 30px;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $red-purple;
+      }
+    }
   }
 
   .view-1,
