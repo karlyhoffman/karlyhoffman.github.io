@@ -15,10 +15,11 @@
     .copy-cont {
       display: block;
       margin: 0 auto;
-      padding-top: 10vw;
+      padding-top: 6vw;
       width: 87.5%;
 
       .tile-row {
+        padding-top: 7.5px;
         @media only screen and (min-width: 768px) {
           &::after {
             content: "";
@@ -35,6 +36,13 @@
         ul {
           list-style: none;
           padding-left: 5px;
+
+          &.tech {
+            li {
+              display: inline-block;
+              padding-right: 6%;
+            }
+          }
         }
       }
       .mobile-line {
@@ -46,13 +54,22 @@
     }
   }
 
+  section.tech {
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
   section.img-showcase {
     margin-top: 5vw;
-    margin-bottom: 5vw;
     padding-bottom: 2vw;
 
-    h2 {
-      padding: 15px 0;
+    .img-cont {
+      margin-top: 3vw;
     }
   }
 }
