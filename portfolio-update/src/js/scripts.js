@@ -27,6 +27,15 @@
       }
     });
 
+    // Safari Autoplay Videos
+    var videos = $('.demo');
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    if (isSafari) {
+      for (var i = 0; i < videos.length; i++) {
+        videos[i].play();
+      }
+    }
+
     // Reveal animations
     var controller = new ScrollMagic.Controller();
 
