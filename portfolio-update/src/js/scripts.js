@@ -21,7 +21,7 @@
       // Image Change
       for (var i = 1; i < listItem.length + 1; i++) {
         if ($(this).hasClass('proj-' + i )) {
-          $('.img-cont').css('background-image', 'url(../assets/img/temp' + i + '.jpg)');
+          $('.img-cont').css('background-image', 'url(../assets/img/project' + i + '.jpg)');
           $('.bg-color').attr('class', 'bg-color').addClass('proj--' + i );
         }
       }

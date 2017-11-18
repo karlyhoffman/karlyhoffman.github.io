@@ -1,7 +1,6 @@
+/* All Projects - Common Styles */
 .projects {
-
   section.hero {
-
     .feat-img {
       background-size: cover;
       background-position: center;
@@ -49,7 +48,6 @@
       @media only screen and (min-width: 768px) {
         padding-left: 5px;
       }
-
       &.tech {
         li {
           display: inline-block;
@@ -62,7 +60,6 @@
   section.tech {
     ul {
       list-style: none;
-
       li {
         display: inline-block;
       }
@@ -85,4 +82,9 @@
       }
     }
   }
+}
+
+/* Water Quiz */
+.water-quiz {
+
 }
