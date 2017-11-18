@@ -86,6 +86,11 @@
 
 /* Water Quiz */
 .water-quiz {
+  section.hero {
+    .copy-cont .tile-row {
+      padding-top: 10px;
+    }
+  }
   section.img-showcase {
     padding-bottom: 0;
     .img-cont {
