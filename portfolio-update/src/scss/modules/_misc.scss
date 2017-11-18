@@ -13,3 +13,11 @@
   color: #fff;
   text-shadow: none;
 }
+
+// Safari Column Wrap Bug
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+   content: normal;
+}
