@@ -68,10 +68,12 @@ body.portfolio-template {
           background-color: $red-purple;
         }
         &--2 {
-          background-color: $purple;
+          // background-color: $purple;
+          background-color: $mini_blue;
         }
         &--3 {
-          background-color: $gray;
+          // background-color: $gray;
+          background-color: $pandora_green;
         }
         &--4 {
           background-color: $brick-red;
@@ -93,11 +95,11 @@ body.portfolio-template {
       background-size: cover;
       background-repeat: no-repeat;
       @include transform(translateY(-50%));
-      @include css3-prefix(box-shadow, 2px 3px 11px -2px rgba(0,0,0,0.2));
+      @include css3-prefix(box-shadow, 2px 3px 11px -2px rgba(0,0,0,0.8));
       @include transition(box-shadow .3s ease-out);
 
       &:hover{
-        @include css3-prefix(box-shadow, 2px 3px 11px -2px rgba(0,0,0,0.75));
+        @include css3-prefix(box-shadow, 2px 3px 11px -2px rgba(0,0,0,1));
       }
 
       img {
