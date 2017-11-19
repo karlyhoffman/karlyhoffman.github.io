@@ -4,6 +4,9 @@ nav.projects {
     color: $white;
     &:hover {
       color: $carbon-black;
+      &::after {
+        background-color: lightgrey;
+      }
     }
   }
 
@@ -13,6 +16,10 @@ nav.projects {
 
       &:hover {
         color: $white;
+
+        &::after {
+          background-color: $white !important;
+        }
       }
     }
   }

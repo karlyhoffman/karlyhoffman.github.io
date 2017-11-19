@@ -12,4 +12,10 @@ nav.contact {
     color: $carbon-black;
   }
 
+  li.active {
+    a::after {
+      background-color: $black !important;
+    }
+  }
+
 }
