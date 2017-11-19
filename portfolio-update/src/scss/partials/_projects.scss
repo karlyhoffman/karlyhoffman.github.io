@@ -84,6 +84,8 @@
   }
 
   section.prev-next {
+    position: relative;
+    z-index: 100;
     i.arrow {
       font-size: 1.8rem;
       padding: 0 7.5px;
