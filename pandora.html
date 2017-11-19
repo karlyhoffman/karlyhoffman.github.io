@@ -22,13 +22,10 @@
     <span class="navbar-toggler-icon">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </span>
-  </button> <a class="navbar-brand" href="/">
-    Karly Hoffman
-    <!-- <img src="" alt=""> -->
-  </a>
+  </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav float-right text-right">
-          <li class="nav-item"> <a class="nav-link" href="/projects.html">Projects</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="/index.html">Projects</a> </li>
           <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
           <li class="nav-item"> <a class="nav-link" href="/contact.html">Contact</a> </li>
         </ul>
@@ -86,7 +83,7 @@
               <div class="row desc-row">
                 <div class="col-12">
                   <ul class="tech">
-                    <li>HTML5/SASS</li>
+                    <li>HTML5/SCSS</li>
                     <li>Bootstrap 3</li>
                     <li>JQuery</li>
                     <li>fullPage.js </li>
@@ -101,7 +98,7 @@
               <div class="row desc-row">
                 <div class="col-12">
                   <ul>
-                    <li>Fullpage locking</li>
+                    <li>Full-page locking</li>
                     <li>Photo carousel</li>
                     <li>Embed videos</li>
                     <li>Responsive design</li>
@@ -115,13 +112,13 @@
       <section class="img-showcase" class="container-fluid">
         <div class="row fade">
           <div class="col-10 col-md-7 mx-auto text-center">
-            <p><span class="project-line">Accordion Animation</span></p>
-            <p>Multiple images cropped to form a separate image. On hover, each image expands to the full container, displaying text based on that specific photo.</p>
+            <p><span class="project-line">Photo Carousel</span></p>
+            <p>Each slide acts as a full-page image gallery with arrow navigation and progress dots representing the current slide.</p>
           </div>
         </div>
         <div class="row img-cont">
           <div class="col-10 mx-auto"> <video class="demo reveal" width="100%" height="100%" autoplay loop>
-          <source src="../assets/img/water_quiz/accordion.mp4" type="video/mp4" />
+          <source src="../assets/img/pandora/pandora_slider.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video> </div>
         </div>
@@ -129,29 +126,12 @@
       <section class="img-showcase" class="container-fluid">
         <div class="row fade">
           <div class="col-10 col-md-7 mx-auto text-center">
-            <p><span class="project-line">Full-page Carousel</span></p>
-            <p>Each slide acts as a separate page with progress dots representing the current slide, providing a unique way to navigate through the site.</p>
+            <p><span class="project-line">Embed videos</span></p>
+            <p>Image placeholder with play button for users to click and watch featured video</p>
           </div>
         </div>
-        <div class="row img-cont">
-          <div class="col-10 mx-auto"> <video class="demo reveal" width="100%" height="100%" autoplay loop>
-          <source src="../assets/img/water_quiz/slides.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> </div>
-        </div>
-      </section>
-      <section class="img-showcase" class="container-fluid">
-        <div class="row fade">
-          <div class="col-10 col-md-7 mx-auto text-center">
-            <p><span class="project-line">User Points + Results</span></p>
-            <p>After every question answered, a tally is kept based on the user's choices and the results are displayed on the final slide.</p>
-          </div>
-        </div>
-        <div class="row img-cont">
-          <div class="col-10 mx-auto"> <video class="demo reveal" width="100%" height="100%" autoplay loop>
-          <source src="../assets/img/water_quiz/results.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> </div>
+        <div class="row img-cont mt-md-5">
+          <div class="col-10 mx-auto"> <img class="img-fluid reveal" src="../assets/img/pandora/pandora_video.png" alt=""> </div>
         </div>
       </section>
       <section class="img-showcase" class="container-fluid">
@@ -162,12 +142,22 @@
           </div>
         </div>
         <div class="row img-cont mt-md-1">
-          <div class="col-10 mx-auto"> <img class="img-fluid reveal" src="../assets/img/water_quiz/resp.png" alt=""> </div>
+          <div class="col-10 mx-auto"> <img class="img-fluid reveal" src="../assets/img/pandora/pandora_resp.png" alt=""> </div>
         </div>
       </section>
-      <section class="pb-5 mb-5">
+      <!-- <section class="pb-5 mb-5 prev-next">
+    <div class="row">
+      <div class="col-6 text-right px-md-5 pb-5">
+        <a class="d-line" href="/mini.html"><i class="arrow fa fa-angle-left" aria-hidden="true"></i>Previous</a>
+      </div>
+      <div class="col-6 px-md-5 pb-5">
+        <a class="d-line" href="/projects.html">Next<i class="arrow next fa fa-angle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section> -->
+      <section class="pb-5 mb-5 prev-next">
         <div class="row">
-          <div class="col-12 text-center pb-5"> <a href="/projects.html">Next</a> </div>
+          <div class="col-12 text-center pb-5"> <a class="d-line" href="/mini.html"><i class="arrow fa fa-angle-left" aria-hidden="true"></i>Previous</a> </div>
         </div>
       </section>
     </main>

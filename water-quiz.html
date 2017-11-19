@@ -22,13 +22,10 @@
     <span class="navbar-toggler-icon">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </span>
-  </button> <a class="navbar-brand" href="/">
-    Karly Hoffman
-    <!-- <img src="" alt=""> -->
-  </a>
+  </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav float-right text-right">
-          <li class="nav-item"> <a class="nav-link" href="/projects.html">Projects</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="/index.html">Projects</a> </li>
           <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
           <li class="nav-item"> <a class="nav-link" href="/contact.html">Contact</a> </li>
         </ul>
@@ -37,7 +34,8 @@
     <main class="projects water-quiz" role="main">
       <section class="hero" class="container-fluid">
         <div class="row">
-          <div class="col-12 col-md-5 col-xl-7 px-0 feat-img" style="background-image: url('../assets/img/water_quiz/hero.png'); background-position: 95% 50%;"> </div>
+          <div class="col-md-5 col-xl-7 px-0 feat-img hidden-sm-down" style="background-image: url('../assets/img/water_quiz/hero.png'); background-position: 95% 50%;"></div>
+          <div class="col-12 col-xl-7 px-0 feat-img hidden-md-up" style="background-image: url('../assets/img/water_quiz/hero-mobile.png'); background-position: 95% 50%;"></div>
           <div class="col-12 col-md-7 col-xl-5">
             <div class="copy-cont">
               <div class="row">
@@ -81,7 +79,7 @@
                 <div class="col-12">
                   <ul class="tech">
                     <li>HTML5</li>
-                    <li>SASS</li>
+                    <li>SCSS</li>
                     <li>JQuery</li>
                     <li>ScrollMagic</li>
                     <li>GSAP</li>
@@ -162,9 +160,9 @@
           <div class="col-10 mx-auto"> <img class="img-fluid reveal" src="../assets/img/water_quiz/resp.png" alt=""> </div>
         </div>
       </section>
-      <section class="pb-5 mb-5">
+      <section class="pb-5 mb-5 prev-next">
         <div class="row">
-          <div class="col-12 text-center pb-5"> <a href="/mini.html">Next</a> </div>
+          <div class="col-12 text-center pb-5"> <a class="d-line" href="/mini.html">Next<i class="arrow next fa fa-angle-right" aria-hidden="true"></i></a> </div>
         </div>
       </section>
     </main>
