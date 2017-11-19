@@ -28,6 +28,11 @@
     margin: 10vw 0;
   }
   .view-2 {
-    margin-bottom: 6vw;
+    min-height: 500px;
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
   }
 }
