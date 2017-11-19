@@ -82,6 +82,18 @@
       }
     }
   }
+
+  section.prev-next {
+    i.arrow {
+      font-size: 1.8rem;
+      padding: 0 7.5px;
+
+      &.next {
+        vertical-align: text-bottom;
+        padding-left: 8px;
+      }
+    }
+  }
 }
 
 /* Water Quiz */
