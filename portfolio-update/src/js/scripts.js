@@ -55,6 +55,12 @@
      var revealStaggerScene = new ScrollMagic.Scene({triggerHook: "0.75", triggerElement: this}).setTween(fadeStaggerIn).addTo(controller);
     });
 
+    $( ".stagger-x" ).each(function( index, elem ) {
+     var animStaggerSubjects = $(elem).find('.x-elmt');
+     var fadeStaggerIn = TweenMax.staggerFromTo(animStaggerSubjects, 0.4, {"opacity": "0", marginLeft:-200}, {"opacity": "1", marginLeft:-5, ease: Power2.easeOut}, 0.2);
+     var revealStaggerScene = new ScrollMagic.Scene({triggerHook: "0.75", triggerElement: this}).setTween(fadeStaggerIn).addTo(controller);
+    });
+
   });
 
 })(jQuery, window, document);
