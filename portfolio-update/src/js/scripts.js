@@ -16,7 +16,7 @@
         $( this ).removeClass('active');
       });
       $(this).addClass('active');
-      var activeSrc = $(".active > a").attr('href');
+      var activeSrc = $(".project-list > .active > a").attr('href');
       $('.feat-img').attr('href', activeSrc);
       // Image Change
       for (var i = 1; i < listItem.length + 1; i++) {
