@@ -1,0 +1,160 @@
+@@include('../fixtures/_header.html')
+@@include('../fixtures/navs/_nav_projects.html')
+
+<main class="projects" role="main">
+
+  <section class="hero" class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-5 col-xl-7 px-0 feat-img" style="background-image: url('../assets/img/project1.png');">
+      </div>
+      <div class="col-12 col-md-7 col-xl-5">
+        <div class="copy-cont">
+          <div class="row">
+            <div class="col-12 pb-md-1">
+              <h2>Project Title</h2>
+              <p>Hodor. Hodor hodor hodor hodor; hodor hodor, hodor, hodor hodor. Hodor hodor HODOR! Hodor hodor?! Hodor hodor hodor hodor...</p>
+            </div>
+          </div>
+          <div class="row tile-row">
+            <div class="col-6 col-md-3">
+              <h3 class="h4">Year</h3>
+              <p class="hidden-md-up">2017</p>
+            </div>
+            <div class="col-6 col-md-4">
+              <h3 class="h4">Location</h3>
+              <p class="hidden-md-up">Chicago</p>
+            </div>
+            <div class="col-12 col-md-5">
+              <h3 class="h4">Client</h3>
+              <p class="hidden-md-up"> — </p>
+            </div>
+          </div>
+          <!-- <div class="mobile-line hidden-md-up"></div> -->
+          <div class="row desc-row hidden-sm-down">
+            <div class="col-3">
+              <p>2017</p>
+            </div>
+            <div class="col-4">
+              <p>Chicago</p>
+            </div>
+            <div class="col-5">
+              <p> — </p>
+            </div>
+          </div>
+          <div class="row tile-row">
+            <div class="col-12">
+              <h3 class="h4">Technologies</h3>
+            </div>
+          </div>
+          <div class="row desc-row">
+            <div class="col-12">
+              <ul class="tech">
+                <li>HTML5</li>
+                <li>SCSS</li>
+                <li>JQuery</li>
+                <li>ScrollMagic</li>
+                <li>GSAP</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row tile-row">
+            <div class="col-12">
+              <h3 class="h4">Deliverables</h3>
+            </div>
+          </div>
+          <div class="row desc-row">
+            <div class="col-12">
+              <ul>
+                <li>Interactive animations</li>
+                <li>Point tracker</li>
+                <li>Results based on user's answer choices</li>
+                <li>Full-page carousel</li>
+                <li>Navigation bar</li>
+                <li>Responsive design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="img-showcase" class="container-fluid">
+    <div class="row fade">
+      <div class="col-10 col-md-7 mx-auto text-center">
+        <p><span class="project-line">Accordion Animation</span></p>
+        <p>Multiple images cropped to form a separate image. On hover, each image expands to the full container, displaying text based on that specific photo.</p>
+      </div>
+    </div>
+
+    <div class="row img-cont">
+      <div class="col-10 mx-auto">
+        <img class="img-fluid reveal" src="../assets/img/project1.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="img-showcase" class="container-fluid">
+    <div class="row fade">
+      <div class="col-10 col-md-7 mx-auto text-center">
+        <p><span class="project-line">Full-page Carousel</span></p>
+        <p>Each slide acts as a separate page with progress dots representing the current slide, providing a unique way to navigate through the site.</p>
+      </div>
+    </div>
+
+    <div class="row img-cont">
+      <div class="col-10 mx-auto">
+        <img class="img-fluid reveal" src="../assets/img/project2.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="img-showcase" class="container-fluid">
+    <div class="row fade">
+      <div class="col-10 col-md-7 mx-auto text-center">
+        <p><span class="project-line">User Points + Results</span></p>
+        <p>After every question answered, a tally is kept based on the user's choices and the results are displayed on the final slide.</p>
+      </div>
+    </div>
+
+    <div class="row img-cont">
+      <div class="col-10 mx-auto">
+        <img class="img-fluid reveal" src="../assets/img/project3.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="img-showcase" class="container-fluid">
+    <div class="row fade">
+      <div class="col-10 col-md-7 mx-auto text-center">
+        <p><span class="project-line">Responsive Design</span></p>
+        <p>Content positioning based on the user's viewport size.</p>
+      </div>
+    </div>
+
+    <div class="row img-cont">
+      <div class="col-10 mx-auto">
+        <img class="img-fluid reveal" src="../assets/img/project3.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-5 mb-5 prev-next">
+    <!-- <div class="row">
+      <div class="col-12 text-center pb-5">
+        <a class="d-line" href="/projects.html"><i class="arrow fa fa-angle-left" aria-hidden="true"></i>Previous</a>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-6 text-right px-md-5 pb-5">
+        <a class="d-line" href="/projects.html"><i class="arrow fa fa-angle-left" aria-hidden="true"></i>Previous</a>
+      </div>
+      <div class="col-6 px-md-5 pb-5">
+        <a class="d-line" href="/projects.html">Next<i class="arrow next fa fa-angle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+@@include('../fixtures/_footer.html')
