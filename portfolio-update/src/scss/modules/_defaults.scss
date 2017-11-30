@@ -25,7 +25,8 @@ body,html{
 
 a {
   @include transition(all 0.2s ease-out);
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 }
