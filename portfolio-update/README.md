@@ -7,7 +7,7 @@
 
 ## Technologies Used:
 - HTML 5
-- Sass/CSS
+- CSS/SCSS
 - Bootstrap 4
 - JavaScript/JQuery
 - GreenSock Animation Platform (GSAP)
