@@ -24,8 +24,9 @@
   }
 
   .view-1,
-  .view-2 {
-    margin: 10vw 0;
+  .view-2,
+  .view-3 {
+    margin-top: 10vw;
   }
   .view-2 {
     min-height: 500px;
@@ -34,5 +35,12 @@
       list-style: none;
       padding-left: 0;
     }
+  }
+  .view-3 {
+    margin-bottom: 10vw;
+  }
+
+  .next-btn {
+    margin-top: 1vw;
   }
 }
