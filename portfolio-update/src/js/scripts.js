@@ -5,8 +5,13 @@
   $(function () {
 
     // About page footer
-    var pathName = window.location.pathname;
-    pathName == '/about.html' ? $('footer').addClass('white-copy') : $('footer').removeClass('white-copy');
+    var url = window.location.href;
+    var aboutPage = /about/;
+    aboutPage.test(url) ? $('footer').addClass('white-copy') : $('footer').removeClass('white-copy');
+
+    // Before removing extensions in .htaccess
+    // var pathName = window.location.pathname;
+    // pathName == '/about.html' ? $('footer').addClass('white-copy') : $('footer').removeClass('white-copy');
 
     // Homepage project list
     var listItem = $('.project-list > li');
