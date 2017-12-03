@@ -61,6 +61,17 @@
      var revealStaggerScene = new ScrollMagic.Scene({triggerHook: "0.75", triggerElement: this}).setTween(fadeStaggerIn).addTo(controller);
     });
 
+    $( ".line-cont" ).each(function( index, elem ) {
+      var lineAnim = $(elem).find('.line');
+      var lineIn = TweenMax.fromTo(lineAnim, 2, {"height": "0"}, {"height": "200%", ease: Power0.easeNone});
+      var revealLine = new ScrollMagic.Scene({triggerHook: "0.7", triggerElement: elem}).setTween(lineIn).addTo(controller);
+    });
+
+    $( ".grow" ).each(function( index, elem ) {
+     var revealIn = TweenMax.fromTo(this, 0.4, { "opacity": "0", "width" : "0", "height" : "0" }, { "opacity": "1", "width" : "18px", "height" : "18px", ease: Power0.easeNone });
+     var revealScene = new ScrollMagic.Scene({triggerHook: "0.85", triggerElement: this}).setTween(revealIn).addTo(controller);
+    });
+
   });
 
 })(jQuery, window, document);
