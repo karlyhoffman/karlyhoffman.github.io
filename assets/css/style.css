@@ -6353,6 +6353,9 @@ body.portfolio-template section.project-nav {
             transition: padding-left 0.3s ease-out; }
             body.portfolio-template section.project-nav .list-cont ul li.active {
               padding-left: 5vw; }
+              body.portfolio-template section.project-nav .list-cont ul li a {
+                color: white;
+                text-decoration: none; } }
             body.portfolio-template section.project-nav .list-cont ul li a:hover {
               color: #b3274a;
               text-decoration: none; } }
